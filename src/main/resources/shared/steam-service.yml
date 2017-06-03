@@ -1,0 +1,10 @@
+server:
+  port: 0
+  context-path: /steam
+
+
+spring:
+  rabbitmq:
+    host: localhost
+    username: admin
+    password: admin
