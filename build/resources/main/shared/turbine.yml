@@ -1,4 +1,11 @@
 
+server:
+  port: 0
+management:
+  port: 8981
+turbine:
+  stream:
+    port: 8989
 
 info:
   component: Turbine
@@ -8,8 +15,6 @@ endpoints:
     enabled: true
   shutdown:
     enabled: true
-
-
 
 spring.rabbitmq:
   host: localhost
