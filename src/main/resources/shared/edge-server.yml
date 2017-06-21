@@ -8,6 +8,11 @@ endpoints:
   health:
     sensitive: false
 
+spring:
+  rabbitmq:
+    host: localhost
+    username: admin
+    password: admin
 
 zuul:
   ignoredServices: "*"
