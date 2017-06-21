@@ -1,0 +1,26 @@
+server:
+  port: 8765
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+
+zuul:
+  ignoredServices: "*"
+  routes:
+    steam:
+      path: /steam/**
+      serviceId: steam-service
+      stripPrefix: false
+    twitter:
+      path: /twitter/**
+      serviceId: twitter-service
+      stripPrefix: false
+
+
+
+
