@@ -25,6 +25,10 @@ zuul:
       path: /twitter/**
       serviceId: twitter-service
       stripPrefix: false
+    main:
+      path: /main/**
+      serviceId: mainservice
+      stripPrefix: false
 
 
 
